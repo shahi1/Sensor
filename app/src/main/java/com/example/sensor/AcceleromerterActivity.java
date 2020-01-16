@@ -22,6 +22,7 @@ public class AcceleromerterActivity extends AppCompatActivity {
         setTitle("Accelerometer Sensor");
 
         tvShowAxis=findViewById(R.id.tvShowAxis);
+        //USed for receiving notifications from the SensorManager when dynameic sensors are connected or disconnected
 
         sensorManager=(SensorManager)getSystemService(SENSOR_SERVICE);
         Sensor sensor =sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
